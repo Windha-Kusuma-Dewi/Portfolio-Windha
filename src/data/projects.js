@@ -13,17 +13,17 @@ export const projects = [
       "/projects/evoconnect/6.png",
     ],
   },
-  // {
-  //   title: "UI/UX HewanKu (Petshop)",
-  //   desc: "A UI/UX design concept for a modern pet store app.",
-  //   detail: "HewanKu is a UI/UX design concept for a modern pet store app, featuring product search and detailed product pages. The design focuses on a clean, friendly shopping experience for pet owners.",
-  //   tags: ["Figma"],
-  //   status: "In Progress",
-  //   images: [
-  //     "/src/assets/projects/hewanku-1.jpg",
-  //   ],
-  //   link: null,
-  // },
+  {
+    title: "UI/UX HewanKu (Petshop)",
+    desc: "A UI/UX design concept for a modern pet store app.",
+    detail: "HewanKu is a UI/UX design concept for a modern pet store app, featuring product search and detailed product pages. The design focuses on a clean, friendly shopping experience for pet owners.",
+    tags: ["Figma"],
+    status: "In Progress",
+    images: [
+      "/projects/hewanku/1.png",
+    ],
+    link: null,
+  },
   {
     title: "Task Management",
     desc: "A task management web app with priorities, due dates, and a dashboard.",
@@ -47,7 +47,7 @@ export const projects = [
     desc: "A UI/UX design concept for a school facility complaint app.",
     detail: "LaporYuk is a UI/UX design concept for a school facility complaint and reporting web app, covering the full screen set from landing page to dashboards, report forms, and modals.",
     tags: ["Figma"],
-    status: "In Progress",
+    // status: "In Progress",
     images: [
       "/projects/laporyuk/1.png",
       "/projects/laporyuk/2.png",
