@@ -9,7 +9,7 @@ import {
   FaGithub,
   FaPhp,
 } from "react-icons/fa"
-import { SiTailwindcss, SiFlutter, SiDart, SiMysql } from "react-icons/si"
+import { SiTailwindcss, SiFlutter, SiDart, SiMysql, SiPostman } from "react-icons/si"
 
 function Skills() {
   const skills = [
@@ -21,10 +21,11 @@ function Skills() {
     { name: "Laravel", icon: <FaLaravel />, color: "text-red-500" },
     { name: "PHP", icon: <FaPhp />, color: "text-indigo-400" },
     { name: "MySQL", icon: <SiMysql />, color: "text-blue-500" },
-    // { name: "Flutter", icon: <SiFlutter />, color: "text-sky-300" },
-    // { name: "Dart", icon: <SiDart />, color: "text-blue-300" },
+    { name: "Flutter", icon: <SiFlutter />, color: "text-sky-300" },
+    { name: "Dart", icon: <SiDart />, color: "text-blue-300" },
     { name: "Figma", icon: <FaFigma />, color: "text-pink-400" },
     { name: "GitHub", icon: <FaGithub />, color: "text-gray-300" },
+    { name: "Postman", icon: <SiPostman />, color: "text-orange-400" }
   ]
 
   return (
@@ -44,20 +45,22 @@ function Skills() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-3 md:grid-cols-5 gap-6">
-          {skills.map((skill, index) => (
-            <motion.div
-              key={skill.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="bg-[#12161f] border border-white/10 rounded-xl p-6 flex flex-col items-center gap-3 hover:border-indigo-400/50 transition"
-            >
-              <span className={`text-4xl ${skill.color}`}>{skill.icon}</span>
-              <p className="text-gray-300 text-sm font-medium">{skill.name}</p>
-            </motion.div>
-          ))}
+        <div className="overflow-hidden">
+          <motion.div
+            className="flex w-max"
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{ duration: 25, ease: "linear", repeat: Infinity }}
+          >
+            {[...skills, ...skills].map((skill, index) => (
+              <div
+                key={index}
+                className="min-w-25 mr-4 bg-[#12161f] border border-white/10 rounded-lg p-4 flex flex-col items-center gap-2"
+              >
+                <span className={`text-3xl ${skill.color}`}>{skill.icon}</span>
+                <p className="text-gray-300 text-xs font-medium">{skill.name}</p>
+              </div>
+            ))}
+          </motion.div>
         </div>
       </div>
     </section>

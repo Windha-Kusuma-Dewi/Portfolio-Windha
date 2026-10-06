@@ -60,26 +60,30 @@ export const projects = [
     ],
     link: "https://www.figma.com/design/jyY1jXBi16TB3uzheLDKmT/LaporYuk?node-id=0-1&t=8KWTQLakl8pTeEvx-1",
   },
-  // {
-  //   title: "Ticketing App",
-  //   desc: "A ticketing app UI converted from Figma design into Flutter.",
-  //   detail: "Converted the Ticketing app UI from Figma design into Flutter, translating the original design system into a functional mobile app interface.",
-  //   tags: ["Flutter"],
-  //   images: [
-  //     "/src/assets/projects/ticketing-1.jpg",
-  //   ],
-  //   link: null,
-  // },
-  // {
-  //   title: "Webshop",
-  //   desc: "An HTML and CSS-based exercise project.",
-  //   detail: "Webshop is an HTML and CSS-based exercise project created to understand how to build a web display from scratch.",
-  //   tags: ["HTML", "CSS"],
-  //   images: [
-  //     "/src/assets/projects/webshop-1.jpg",
-  //   ],
-  //   link: "https://your-webshop-link.com",
-  // },
+  {
+    title: "Ticketing App",
+    desc: "A ticketing app UI converted from Figma design into Flutter.",
+    detail: "Implemented a Flutter mobile interface based on a Figma UI/UX design, translating the provided layouts and visual elements into a clean mobile interface. This project focuses on UI slicing without backend integration.",
+    tags: ["Flutter"],
+    images: [
+      "/projects/tiket/1.png",
+      "/projects/tiket/2.png",
+      "/projects/tiket/3.png",
+    ],
+    link: null,
+  },
+  {
+    title: "Sewa Lapangan",
+    desc: "A field rental app UI converted from Figma design into Flutter.",
+    detail: "Implemented a field rental app UI in Flutter based on the provided UI/UX design, focusing on recreating the layout and visual elements.",
+    tags: ["Flutter"],
+    images: [
+      "/projects/lapangan/1.png",
+      "/projects/lapangan/2.png",
+      "/projects/lapangan/3.png",
+    ],
+    link: null,
+  },
   {
     title: "MasakAja",
     desc: "A UI/UX design concept for a meal planning and grocery list mobile app.",
